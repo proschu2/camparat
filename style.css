@@ -1,0 +1,46 @@
+body {
+  background-color: white;
+  font-family: "PPGatwick-Bold", sans-serif;
+  font-size: large;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.logo-container img {
+  width: 200px;
+  /* cambia le dimensioni dell'immagine a seconda della tua preferenza */
+  height: 200px;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+
+.logo-container img:hover {
+  transform: rotate(360deg);
+}
+
+.logo-text-container {
+  width: 100%;
+  text-align: center;
+}
+
+.logo-text {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+footer {
+  font-family: "PPGatwick-Bold", sans-serif;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
