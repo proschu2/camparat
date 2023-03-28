@@ -20,11 +20,33 @@ body {
 }
 
 .logo-container img {
-  width: 30%;
+  width: 50vw;
   /* cambia le dimensioni dell'immagine a seconda della tua preferenza */
   height: auto;
   border-radius: 50%;
   transition: transform 0.5s ease;
+}
+
+/* Adjust the size of the logo for smaller screens */
+
+@media (min-width: 768px) {
+  .logo-container img {
+    width: 30vw;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+  }
+}
+
+/* Adjust the size of the logo for larger screens */
+
+@media (min-width: 1200px) {
+  .logo-container img {
+    width: 20vw;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+  }
 }
 
 .logo-container img:hover {
@@ -38,13 +60,14 @@ body {
 
 .logo-text {
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 1rem;
 }
 
 footer {
   font-family: "PPGatwick-Bold", sans-serif;
-  color: black;
+  font-size: 0.75rem;
+  color: #888;
   text-align: center;
   padding: 1rem;
   position: absolute;
